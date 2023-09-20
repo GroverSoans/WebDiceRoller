@@ -5,9 +5,7 @@
 }
 body{
     height: auto;
-    background: linear-gradient(
-        darkgrey
-    )0 100% no-repeat;
-    background-size: 100% 50%;
+    background: darkgrey;
+    background-size: 100%;
 
 }
