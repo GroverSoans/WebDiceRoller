@@ -1,9 +1,11 @@
-function rollDice() {
-    // Get random values for two dice rolls (between 1 and 6)
-    const roll1 = Math.floor(Math.random() * 6) + 1;
-    const roll2 = Math.floor(Math.random() * 6) + 1;
-
-    // Update the src attribute of the dice images to display the rolled numbers
-    document.getElementById("die1").src = `dice-${roll1}.png`;
-    document.getElementById("die2").src = `dice-${roll2}.png`;
+function roll() {
+    let die1 = document.getElementById("die1");
+    let die2 = document.getElementById("die2");
+    let result = document.getElementById("result");
+    let d1 = Math.floor(Math.random() * 6) + 1;
+    let d2 = Math.floor(Math.random() * 6) + 1;
+    let total = d1 + d2;
+    die1.innerHTML = d1;
+    die2.innerHTML = d2;
+    result.innerHTML = ` You rolled ${total}`;
 }

@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Roll The Dice</title>
-<link rel = "styleSheet" href = "diceRoller.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll The Dice</title>
+    <link rel = "styleSheet" href = "diceRoller.css">
 <script src = "diceRoller.js"></script>
 </head>
 <body>
+    <h1>Roll the Dice</h1>
     <div class = "container">
-        <div class = "die">
-            <div class="dieDots"></div>
+        <div class = "diceContainer">
+            <div class = "die" id="die1">
+                0
+            </div>
+            <div class = "die" id="die2">
+                0
+            </div>
         </div>
-        <button type ="button" class = "rollButton">Roll Dice</button>
+        <button onclick="roll()" type ="button" class = "rollButton">Roll The Dice</button>
+        <div class = "result" id = "result">
+            0
+        </div>
     </div>
 
 </body>

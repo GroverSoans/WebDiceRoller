@@ -5,9 +5,14 @@
 }
 body{
     height: auto;
-    background: darkgrey;
+    background: rgb(143, 42, 42);
     background-size: 100%;
 
+}
+h1{
+    
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .container{
     width: 400px;
@@ -18,6 +23,15 @@ body{
     transform: translate(-50%, -50%);
     background-color: white;
     border-radius: 8px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.diceContainer{
+    width: 90;
+    display: flex;
+    justify-content: space-around;
 }
 .die {
     width: 100px;
@@ -25,18 +39,24 @@ body{
     position: relative;
     margin: 10px;
     border-radius: 10px;
-	box-shadow: 0 0 12px black;
+	box-shadow: 0 0 12px rgb(0, 0, 0);
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
-.dieDots {
-    width: 15px;
-    height: 15px;
-    background-color: black;
-    border-radius: 50%;
+button{
+    background-color: aqua;
+    border: none;
+    outline: none;
+    padding: 15px 0;
+    width: 150px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
-    /*Postition of dots*/
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.result{
+    font-size: medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
