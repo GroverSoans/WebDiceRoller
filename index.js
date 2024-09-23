@@ -1,5 +1,4 @@
 
-
 function rollDice(){
 
     const numOfDice = document.getElementById("numOfDice").value;
@@ -13,7 +12,7 @@ function rollDice(){
         const value = Math.floor(Math.random()*6) + 1;
         //console.log(value);
         values.push(value);
-        images.push(`<img src="diceImages/${value}.png">`)
+        images.push(`<img src="diceImages/${value}.png" alt="Dice ${value}">`)
     }
     //console.log(values)
 
