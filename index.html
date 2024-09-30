@@ -5,34 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Your Website Title</title>
+
+    <script src="env.js"></script> 
+    <script src = "index.js"></script>
     <script>
         window.env = {
           ENVIRONMENT: '%ENVIRONMENT%'  
         };
       </script>
+
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body onload="rollDice()">
     <div id="envBanner"></div>
-    <script>
-        // Display environment information on the page
-        document.addEventListener('DOMContentLoaded', function() {
-          const envBanner = document.getElementById('envBanner');
-          const environment = window.env.ENVIRONMENT;
-          
-          if (environment) {
-            envBanner.innerText = `Environment: ${environment}`;
-            envBanner.style.position = 'absolute';
-            envBanner.style.top = '0';
-            envBanner.style.width = '100%';
-            envBanner.style.backgroundColor = environment === 'production' ? 'green' : 'yellow';
-            envBanner.style.color = 'white';
-            envBanner.style.textAlign = 'center';
-            envBanner.style.padding = '10px';
-            envBanner.style.zIndex = '1000';
-          }
-        });
-      </script>
     <div id ="container">
         <h1>Dice Roller</h1>
         <label># of Dice</label>
@@ -42,6 +27,6 @@
         <div id="diceImages"></div>
 
     </div>
-    <script src = "index.js"></script>
+
 </body>
 </html>
