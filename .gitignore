@@ -1,6 +1,6 @@
 # .gitignore
 .env
-.github
+
 
 # Node modules
 node_modules/
