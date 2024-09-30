@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Your Website Title</title>
     <script>
-        window.env = {
-          ENVIRONMENT: '%ENVIRONMENT%'  <!-- This will be replaced by "production" or "test" during build -->
-        };
+        //window.env = {
+          //ENVIRONMENT: '%ENVIRONMENT%'  
+        //};
       </script>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
@@ -35,7 +35,6 @@
       </script>
     <div id ="container">
         <h1>Dice Roller</h1>
-        <p id="env-display"></p>
         <label># of Dice</label>
         <input type = "number" id = "numOfDice" value="1" min="1">
         <button onclick="rollDice()">Roll Dice</button>
