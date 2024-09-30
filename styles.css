@@ -39,18 +39,17 @@ input{
     top: 0;
     right: 0; /* Align to the right */
     padding: 10px;
-    z-index: 1000;
     color: white;
     text-align: center;
-    width: auto; /* Adjust width for better fit */
+    width:max-content; /* Adjust width for better fit */
   }
   
   /* Production environment styles */
   .env-production {
-    background-color: green;
+    background-color: black;
   }
   
   /* Test environment styles */
   .env-test {
-    background-color: yellow;
+    background-color: black;
   }
