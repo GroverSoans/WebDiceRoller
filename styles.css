@@ -1,12 +1,14 @@
-#container{
+/* Container and Button Styles */
+#container {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
 }
-button{
+
+button {
     font-size: 1.5rem;
-    padding: 10px, 15px;
+    padding: 10px 15px; /* Fixed incorrect padding syntax: commas replaced by spaces */
     border-radius: 10px;
     border: none;
     background-color: hsl(210, 100%, 50%);
@@ -14,42 +16,51 @@ button{
     font-weight: bold;
     cursor: pointer;
 }
-button:hover{
+
+button:hover {
     background-color: hsl(210, 100%, 60%);
 }
-button:active{
+
+button:active {
     background-color: hsl(210, 100%, 70%);
 }
-input{
+
+/* Input Field Styles */
+input {
     font-size: 2rem;
     width: 150px;
     text-align: center;
     font-weight: bold;
 }
-#diceResult{
-    margin: 25px;
 
+/* Dice Result and Images */
+#diceResult {
+    margin: 25px;
 }
-#diceImages img{
+
+#diceImages img {
     width: 150px;
     margin: 5px;
+    display: inline-block; /* Ensure images are displayed inline */
 }
+
+/* Environment Banner */
 #envBanner {
     position: absolute;
     top: 0;
-    right: 0; /* Align to the right */
+    right: 0;
     padding: 10px;
     color: white;
     text-align: center;
-    width:max-content; /* Adjust width for better fit */
-  }
-  
-  /* Production environment styles */
-  .env-production {
+    width: max-content;
+}
+
+/* Production Environment Styles */
+.env-production {
     background-color: black;
-  }
-  
-  /* Test environment styles */
-  .env-test {
+}
+
+/* Test Environment Styles */
+.env-test {
     background-color: black;
-  }
+}
