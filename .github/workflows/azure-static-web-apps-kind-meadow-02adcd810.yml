@@ -19,9 +19,9 @@ jobs:
         with:
           submodules: true
           lfs: false
-      - name: Create env.js file with environment variables
+      - name: Inject Environment Variable into HTML
         run: |
-          echo "window.env = { ENVIRONMENT: '${{ secrets.AZURE_STATIC_WEB_APPS_ENVIRONMENT }}' };" > env.js
+          sed -i 's|%ENVIRONMENT%|test|g' index.html
 
       - name: Build And Deploy
         id: builddeploy
