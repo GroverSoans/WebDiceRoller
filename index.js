@@ -4,6 +4,9 @@ function rollDice(){
     const numOfDice = document.getElementById("numOfDice").value;
     const diceResult = document.getElementById("numOfDice");
     const diceImages = document.getElementById("diceImages");
+    const environment = window.env.ENVIRONMENT || 'unknown';
+    document.getElementById('env-display').textContent = `Environment: ${environment}`;
+
 
     const values = []
     const images = []
